@@ -27,10 +27,10 @@ class DateTimeDecorator extends DateTime
     /**
      * 比較する日付との秒差を取得する
      *
-     * @param DateTime $dateTime
+     * @param DateTimeInterface $dateTime
      * @return integer
      */
-    public function getMarginSecond(DateTime $dateTime): int
+    public function getMarginSecond(DateTimeInterface $dateTime): int
     {
         return $dateTime->getTimestamp() - $this->_dateTime->getTimestamp();
     }
